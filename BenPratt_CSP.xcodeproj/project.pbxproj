@@ -97,12 +97,10 @@
 		9A8971821FA2567E00C811BC /* BenPratt_CSP */ = {
 			isa = PBXGroup;
 			children = (
-				9A8971831FA2567E00C811BC /* AppDelegate.swift */,
-				9A8971851FA2567E00C811BC /* ViewController.swift */,
-				9A8971871FA2567E00C811BC /* Main.storyboard */,
-				9A89718A1FA2567E00C811BC /* Assets.xcassets */,
-				9A89718C1FA2567E00C811BC /* LaunchScreen.storyboard */,
-				9A89718F1FA2567E00C811BC /* Info.plist */,
+				9A8971B41FA2574C00C811BC /* model */,
+				9A8971B11FA2569600C811BC /* controller */,
+				9A8971B31FA2572000C811BC /* assets */,
+				9A8971B21FA2571000C811BC /* view */,
 			);
 			path = BenPratt_CSP;
 			sourceTree = "<group>";
@@ -123,6 +121,40 @@
 				9A8971A51FA2567F00C811BC /* Info.plist */,
 			);
 			path = BenPratt_CSPUITests;
+			sourceTree = "<group>";
+		};
+		9A8971B11FA2569600C811BC /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				9A8971831FA2567E00C811BC /* AppDelegate.swift */,
+				9A8971851FA2567E00C811BC /* ViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		9A8971B21FA2571000C811BC /* view */ = {
+			isa = PBXGroup;
+			children = (
+				9A8971871FA2567E00C811BC /* Main.storyboard */,
+				9A89718C1FA2567E00C811BC /* LaunchScreen.storyboard */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		9A8971B31FA2572000C811BC /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				9A89718F1FA2567E00C811BC /* Info.plist */,
+				9A89718A1FA2567E00C811BC /* Assets.xcassets */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		9A8971B41FA2574C00C811BC /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -427,7 +459,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = BenPratt_CSP/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/BenPratt_CSP/assets/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "CTEC.BenPratt-CSP";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -441,7 +473,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = BenPratt_CSP/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/BenPratt_CSP/assets/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "CTEC.BenPratt-CSP";
 				PRODUCT_NAME = "$(TARGET_NAME)";
