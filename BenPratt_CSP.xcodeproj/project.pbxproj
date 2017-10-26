@@ -14,6 +14,13 @@
 		9A89718E1FA2567E00C811BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A89718C1FA2567E00C811BC /* LaunchScreen.storyboard */; };
 		9A8971991FA2567E00C811BC /* BenPratt_CSPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8971981FA2567E00C811BC /* BenPratt_CSPTests.swift */; };
 		9A8971A41FA2567F00C811BC /* BenPratt_CSPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8971A31FA2567F00C811BC /* BenPratt_CSPUITests.swift */; };
+		9A8971B61FA25A5F00C811BC /* CreativityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8971B51FA25A5F00C811BC /* CreativityController.swift */; };
+		9A8971B81FA25AA600C811BC /* AbstractionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8971B71FA25AA600C811BC /* AbstractionController.swift */; };
+		9A8971BA1FA25AC500C811BC /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8971B91FA25AC500C811BC /* DataController.swift */; };
+		9A8971BC1FA25ADF00C811BC /* AlgorithmController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8971BB1FA25ADF00C811BC /* AlgorithmController.swift */; };
+		9A8971BE1FA25AED00C811BC /* ProgrammingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8971BD1FA25AED00C811BC /* ProgrammingController.swift */; };
+		9A8971C01FA25AFD00C811BC /* InternetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8971BF1FA25AFD00C811BC /* InternetController.swift */; };
+		9A8971C21FA25B1800C811BC /* GlobalImpactController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8971C11FA25B1800C811BC /* GlobalImpactController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +54,13 @@
 		9A89719F1FA2567F00C811BC /* BenPratt_CSPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BenPratt_CSPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A8971A31FA2567F00C811BC /* BenPratt_CSPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenPratt_CSPUITests.swift; sourceTree = "<group>"; };
 		9A8971A51FA2567F00C811BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A8971B51FA25A5F00C811BC /* CreativityController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreativityController.swift; sourceTree = "<group>"; };
+		9A8971B71FA25AA600C811BC /* AbstractionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractionController.swift; sourceTree = "<group>"; };
+		9A8971B91FA25AC500C811BC /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		9A8971BB1FA25ADF00C811BC /* AlgorithmController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgorithmController.swift; sourceTree = "<group>"; };
+		9A8971BD1FA25AED00C811BC /* ProgrammingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammingController.swift; sourceTree = "<group>"; };
+		9A8971BF1FA25AFD00C811BC /* InternetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetController.swift; sourceTree = "<group>"; };
+		9A8971C11FA25B1800C811BC /* GlobalImpactController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalImpactController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +142,13 @@
 			children = (
 				9A8971831FA2567E00C811BC /* AppDelegate.swift */,
 				9A8971851FA2567E00C811BC /* ViewController.swift */,
+				9A8971B51FA25A5F00C811BC /* CreativityController.swift */,
+				9A8971B71FA25AA600C811BC /* AbstractionController.swift */,
+				9A8971B91FA25AC500C811BC /* DataController.swift */,
+				9A8971BB1FA25ADF00C811BC /* AlgorithmController.swift */,
+				9A8971BD1FA25AED00C811BC /* ProgrammingController.swift */,
+				9A8971BF1FA25AFD00C811BC /* InternetController.swift */,
+				9A8971C11FA25B1800C811BC /* GlobalImpactController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -291,6 +312,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A8971C21FA25B1800C811BC /* GlobalImpactController.swift in Sources */,
+				9A8971C01FA25AFD00C811BC /* InternetController.swift in Sources */,
+				9A8971BA1FA25AC500C811BC /* DataController.swift in Sources */,
+				9A8971BE1FA25AED00C811BC /* ProgrammingController.swift in Sources */,
+				9A8971BC1FA25ADF00C811BC /* AlgorithmController.swift in Sources */,
+				9A8971B81FA25AA600C811BC /* AbstractionController.swift in Sources */,
+				9A8971B61FA25A5F00C811BC /* CreativityController.swift in Sources */,
 				9A8971861FA2567E00C811BC /* ViewController.swift in Sources */,
 				9A8971841FA2567E00C811BC /* AppDelegate.swift in Sources */,
 			);
@@ -335,6 +363,7 @@
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		9A89718C1FA2567E00C811BC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
