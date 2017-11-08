@@ -36,7 +36,7 @@ class AlgorithmController: UIViewController {
             let attributedStringStep: NSMutableAttributedString = NSMutableAttributedString(string: formattedStep)
             let paragraphStyle = createParagraphStyle()
             
-            attributedStringStep.addAttributes([NSAttributedStringKey.paragrapyStyle : paragraphStyle], range: NSMakeRange(0, attributedStringStep.length))
+            attributedStringStep.addAttributes([NSAttributedStringKey.paragraphStyle : paragraphStyle], range: NSMakeRange(0, attributedStringStep.length))
             
             fullAttributedString.append(attributedStringStep)
         }
@@ -44,10 +44,12 @@ class AlgorithmController: UIViewController {
     
     private func createParagraphStyle() ->NSParagraphStyle{
         let paragraphStyle: NSMutableParagraphStyle = NSMutableParagraphStyle()
-        paragraphStyle.alignment = .left
+        paragraphStyle.alignment = .left	
         paragraphStyle.defaultTabInterval = 15
         paragraphStyle.firstLineHeadIndent = 20
         paragraphStyle.headIndent = 35
+        
+        return paragraphStyle
     }
     
     
