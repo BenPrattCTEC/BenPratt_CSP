@@ -10,6 +10,8 @@ import UIKit
 
 class AlgorithmController: UIViewController {
 
+    @IBOutlet weak var Label: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
