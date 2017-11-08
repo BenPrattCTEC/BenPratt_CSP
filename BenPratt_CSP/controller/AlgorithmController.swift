@@ -9,8 +9,47 @@
 import UIKit
 
 class AlgorithmController: UIViewController {
-
-    @IBOutlet weak var Label: UILabel!
+    
+    @IBOutlet weak var algorithmText: UILabel!
+    
+    private func setupAlgorithm(){
+        let algorithm: String = "These are the inbstrructions to create a project in Java using eclipse and github \n"
+        
+        var algorithmSteps:[String] = [
+        "Create new project on github website",
+        "In Ecllipse add a new project",
+        "add model, view, controller and the classes that go in them",
+        "from terminal(or github desktop) do:",
+        "git init .",
+        "git add .",
+        "git commit -m $Message",
+        "git remote add origin $URL",
+        "git push -u origin master"
+        ]
+        
+        let attributesDictionary = [NSAttributedStringKey.font: algorithmText.font]
+        let fullAttributedString = NSMutableAttributedString(string: algorithm, attributes: attributesDictionary)
+        
+        for step in algorithmSteps{
+            let bullet: String = "*"
+            let formattedStep :String = "\n\(bullet) \(step)"
+            let attributedStringStep: NSMutableAttributedString = NSMutableAttributedString(string: formattedStep)
+            let paragraphStyle = createParagraphStyle()
+            
+            attributedStringStep.addAttributes([NSAttributedStringKey.paragrapyStyle : paragraphStyle], range: NSMakeRange(0, attributedStringStep.length))
+            
+            fullAttributedString.append(attributedStringStep)
+        }
+    }
+    
+    private func createParagraphStyle() ->NSParagraphStyle{
+        let paragraphStyle: NSMutableParagraphStyle = NSMutableParagraphStyle()
+        paragraphStyle.alignment = .left
+        paragraphStyle.defaultTabInterval = 15
+        paragraphStyle.firstLineHeadIndent = 20
+        paragraphStyle.headIndent = 35
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,3 +74,4 @@ class AlgorithmController: UIViewController {
     */
 
 }
+

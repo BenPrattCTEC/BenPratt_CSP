@@ -62,7 +62,7 @@
                         <viewLayoutGuide key="safeArea" id="Vn6-mS-3gC"/>
                     </view>
                     <connections>
-                        <outlet property="Label" destination="6tM-b9-IWy" id="tnX-BE-m8C"/>
+                        <outlet property="algorithmText" destination="6tM-b9-IWy" id="BqM-Vd-L8A"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9OB-t7-azL" userLabel="First Responder" sceneMemberID="firstResponder"/>
