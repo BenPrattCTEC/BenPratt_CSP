@@ -56,6 +56,7 @@ class AlgorithmController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupAlgorithm()
 
         // Do any additional setup after loading the view.
     }
