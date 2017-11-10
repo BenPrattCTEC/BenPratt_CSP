@@ -12,8 +12,10 @@ class AlgorithmController: UIViewController {
     
     @IBOutlet weak var algorithmText: UILabel!
     
+    @IBOutlet weak var imageViewer: UIImageView!
+    
     private func setupAlgorithm(){
-        let algorithm: String = "These are the inbstrructions to create a project in Java using eclipse and github \n"
+        let algorithm: String = "These are the instrructions to create a project in Java using eclipse and github \n"
         
         let algorithmSteps:[String] = [
         "Create new project on github website",
@@ -57,6 +59,8 @@ class AlgorithmController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupAlgorithm()
+        imageViewer.image = UIImage(named: "javaSample")
+        
 
         // Do any additional setup after loading the view.
     }

@@ -55,7 +55,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6tM-b9-IWy">
-                                <rect key="frame" x="150" y="626" width="75" height="21"/>
+                                <rect key="frame" x="16" y="241" width="343" height="406"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Algorithm">
@@ -72,11 +72,12 @@
                     </view>
                     <connections>
                         <outlet property="algorithmText" destination="6tM-b9-IWy" id="BqM-Vd-L8A"/>
+                        <outlet property="imageViewer" destination="ere-o9-5Ef" id="i2g-bJ-KyW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9OB-t7-azL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="900" y="92"/>
+            <point key="canvasLocation" x="900" y="91.304347826086968"/>
         </scene>
         <!--Global Impact Controller-->
         <scene sceneID="LE5-x4-kYr">
