@@ -10,8 +10,14 @@ import UIKit
 
 class GlobalImpactController: UIViewController {
 
+    @IBOutlet weak var WaterImage: UIImageView!
+    @IBOutlet weak var SketchImage: UIImageView!
+    
+    @IBOutlet weak var textLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        setup()
 
         // Do any additional setup after loading the view.
     }
@@ -19,6 +25,14 @@ class GlobalImpactController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    public func setup(){
+        
+        WaterImage.image = UIImage(named: "WaterProblem")
+        
+        textLabel.text = "Plan: An app that allows people to report the water data for their area and gethers in it in a nice, viewable format.\n\nNeed: 1.8 Million people are without clean water, this allows the spread of various diseases.\n\nPersonal Connection: I have researched the hazards of unclean water in the developing world and something needs to be done about it."
+        
     }
     
 

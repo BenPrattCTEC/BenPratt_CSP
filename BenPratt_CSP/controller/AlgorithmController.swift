@@ -15,7 +15,7 @@ class AlgorithmController: UIViewController {
     private func setupAlgorithm(){
         let algorithm: String = "These are the inbstrructions to create a project in Java using eclipse and github \n"
         
-        var algorithmSteps:[String] = [
+        let algorithmSteps:[String] = [
         "Create new project on github website",
         "In Ecllipse add a new project",
         "add model, view, controller and the classes that go in them",
@@ -44,7 +44,7 @@ class AlgorithmController: UIViewController {
     
     private func createParagraphStyle() ->NSParagraphStyle{
         let paragraphStyle: NSMutableParagraphStyle = NSMutableParagraphStyle()
-        paragraphStyle.alignment = .left	
+        paragraphStyle.alignment = .left
         paragraphStyle.defaultTabInterval = 15
         paragraphStyle.firstLineHeadIndent = 20
         paragraphStyle.headIndent = 35
