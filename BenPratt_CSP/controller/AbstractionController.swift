@@ -21,7 +21,7 @@ class AbstractionController: UIPageViewController, UIPageViewControllerDataSourc
     }()
     
     private func newAbstractionViewController(abstractionLevel: String)-> UIViewController{
-        return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "\(abstractionLevel)ViewController")
+        return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Abstractions-\(abstractionLevel)")
     }
     
     override func viewDidLoad() {
@@ -73,6 +73,16 @@ class AbstractionController: UIPageViewController, UIPageViewControllerDataSourc
         return orderedAbstractionViews[nextIndex]
     }
 
+    public func presentationCount(for pageViewController: UIPageViewController) -> Int{
+        return orderedAbstractionViews.count
+    }
+    public func presentationIndex(for pageViewController: UIPageViewController) -> Int{
+        guard let firstViewController = viewControllers?.first, let firstViewControllerIndex = orderedAbstractionViews.index(of: firstViewController)
+        else{
+                return 0
+        }
+        return firstViewControllerIndex
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
