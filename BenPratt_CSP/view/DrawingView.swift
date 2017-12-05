@@ -32,10 +32,13 @@ class DrawingView: UIView {
                            clockwise: true)
         stickFigure.move(to: CGPoint(x: 200, y: 220))
         stickFigure.addLine(to: CGPoint(x: 200, y: 270))
+        
         stickFigure.move(to: CGPoint(x: 180, y: 240))
         stickFigure.addLine(to: CGPoint(x: 220, y: 240))
+        
         stickFigure.move(to: CGPoint(x: 200, y: 270))
         stickFigure.addLine(to: CGPoint(x: 180, y: 300))
+        
         stickFigure.move(to: CGPoint(x: 200, y: 270))
         stickFigure.addLine(to: CGPoint(x: 220, y: 300))
         
