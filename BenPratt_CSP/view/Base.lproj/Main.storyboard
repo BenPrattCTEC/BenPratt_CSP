@@ -106,9 +106,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dDg-ih-M20" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3016.8000000000002" y="-77.811094452773617"/>
+            <point key="canvasLocation" x="3473" y="-36"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Internet Samples-->
         <scene sceneID="5eF-SZ-tuw">
             <objects>
                 <tableViewController clearsSelectionOnViewWillAppear="NO" id="XaY-gz-OKJ" customClass="InternetMasterViewController" customModule="BenPratt_CSP" customModuleProvider="target" sceneMemberID="viewController">
@@ -117,13 +117,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Ae4-4q-2nX">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifier" id="Ae4-4q-2nX">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ae4-4q-2nX" id="WA8-Qg-yit">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="JOj-41-z12" kind="showDetail" identifier="ShowDetail" id="OH6-FN-blL"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -131,7 +134,7 @@
                             <outlet property="delegate" destination="XaY-gz-OKJ" id="yif-1s-fAg"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="C8T-cT-esB"/>
+                    <navigationItem key="navigationItem" title="Internet Samples" id="C8T-cT-esB"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VEB-iL-8ZU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -395,4 +398,7 @@
         <image name="Bytecode" width="574" height="342"/>
         <image name="javaSample" width="1126" height="754"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="OH6-FN-blL"/>
+    </inferredMetricsTieBreakers>
 </document>

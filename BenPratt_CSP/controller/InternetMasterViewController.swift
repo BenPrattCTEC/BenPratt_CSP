@@ -65,6 +65,9 @@ class InternetMasterViewController: UITableViewController {
     private func setup(){
         //TODO: add actual addresses
         addresses = [
+            "https://www.google.com",
+            "https://www.google.com",
+            "https://www.google.com",
             "https://www.google.com"
         ]
         
