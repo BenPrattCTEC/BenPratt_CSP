@@ -23,6 +23,7 @@
 		9A8971BE1FA25AED00C811BC /* ProgrammingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8971BD1FA25AED00C811BC /* ProgrammingController.swift */; };
 		9A8971C01FA25AFD00C811BC /* InternetMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8971BF1FA25AFD00C811BC /* InternetMasterViewController.swift */; };
 		9A8971C21FA25B1800C811BC /* GlobalImpactController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8971C11FA25B1800C811BC /* GlobalImpactController.swift */; };
+		9AC8577E1FD72A130060B23B /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC8577D1FD72A130060B23B /* DrawingView.swift */; };
 		9AC9E2461FC35F310085EB54 /* Flyable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC9E2451FC35F310085EB54 /* Flyable.swift */; };
 		9AC9E2481FC35FC30085EB54 /* Duck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC9E2471FC35FC30085EB54 /* Duck.swift */; };
 /* End PBXBuildFile section */
@@ -67,6 +68,7 @@
 		9A8971BD1FA25AED00C811BC /* ProgrammingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammingController.swift; sourceTree = "<group>"; };
 		9A8971BF1FA25AFD00C811BC /* InternetMasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetMasterViewController.swift; sourceTree = "<group>"; };
 		9A8971C11FA25B1800C811BC /* GlobalImpactController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalImpactController.swift; sourceTree = "<group>"; };
+		9AC8577D1FD72A130060B23B /* DrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
 		9AC9E2451FC35F310085EB54 /* Flyable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flyable.swift; sourceTree = "<group>"; };
 		9AC9E2471FC35FC30085EB54 /* Duck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Duck.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -177,6 +179,7 @@
 			children = (
 				9A8971871FA2567E00C811BC /* Main.storyboard */,
 				9A89718C1FA2567E00C811BC /* LaunchScreen.storyboard */,
+				9AC8577D1FD72A130060B23B /* DrawingView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -338,6 +341,7 @@
 				9A8971C01FA25AFD00C811BC /* InternetMasterViewController.swift in Sources */,
 				9A8971BA1FA25AC500C811BC /* DataController.swift in Sources */,
 				9A3914DC1FCF399F00F0C5C6 /* InternetDetailViewController.swift in Sources */,
+				9AC8577E1FD72A130060B23B /* DrawingView.swift in Sources */,
 				9A8971BE1FA25AED00C811BC /* ProgrammingController.swift in Sources */,
 				9A8971BC1FA25ADF00C811BC /* AlgorithmController.swift in Sources */,
 				9A8971B81FA25AA600C811BC /* AbstractionController.swift in Sources */,
