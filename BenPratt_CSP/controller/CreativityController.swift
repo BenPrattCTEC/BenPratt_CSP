@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CreativityController: UICollectionViewController, UICollectionViewDelegate {
+class CreativityController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
     private let reuseIdentifier = "artIdentifier"
     private let sectionInsets = UIEdgeInsets(top: 50, left: 20, bottom: 50, right: 20)
@@ -71,9 +71,12 @@ class CreativityController: UICollectionViewController, UICollectionViewDelegate
             let size = collectionView.bounds.size
             let widthScale = (size.width/art!.size.width) * CGFloat(0.8)
             let largeSize = CGSize(width: art!.size.width * widthScale, height: art!.size.height * widthScale)
-            
             return largeSize
         }
+        let paddingSpace = sectionInsets.left * (itemsPerRow+1)
+        let availableWidth = view.frame.width - paddingSpace
+        let widthPerItem = availableWidth/itemsPerRow
+        return CGSize(width: widthPerItem, height: widthPerItem)
     }
     
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets{
