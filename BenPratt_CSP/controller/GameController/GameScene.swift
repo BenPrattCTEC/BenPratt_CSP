@@ -78,7 +78,7 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
             
         }
         
-        if(changeDirection == true)
+        if(changeDirection)
         {
             self.invaderSpeed *= -1
             self.enumerateChildNodes(withName: "invader")
@@ -134,7 +134,7 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
 
     override public func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) -> Void
     {
-       
+        player.fireBullet(scene: self)
     }
     
     override public func update(_ currentTime: CFTimeInterval) -> Void
